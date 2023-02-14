@@ -1,5 +1,5 @@
 import React from "react";
-import "./mars-viewer.scss";
+import "./marsViewer.scss";
 
 export const MarsViewer: React.FunctionComponent = () => {
   return (
