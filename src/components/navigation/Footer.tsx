@@ -24,7 +24,7 @@ export default function Footer() {
                 <h2>Fun Fact</h2>
                 <div className='footerFact'>Fun Fact Placeholder</div>
             </div>
-            <button className="button" onClick={() => setFooterRight(!footerRight)}>{ footerRight? "Find fun facts" : "Find Weather"}</button>
+            <button className="footerButton" onClick={() => setFooterRight(!footerRight)}>{ footerRight? "Check Fun Facts" :  "Check Weather"}</button>
         </div>
     </div>)
 }

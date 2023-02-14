@@ -14,17 +14,20 @@
 .footerRight {
     grid-column-start: 2;
     grid-column-end: 3;
+    display:flex;
+    flex-direction:column;
 
 }
 
 .footerWeather {
-    background-color: blue;
+    background-color:bisque;
     width: 50%;
     height: 50%;
 }
 
 h2 {
     margin-bottom: 2%;
+    font-size:1.2em;
 }
 
 #footerRightWrapper {
@@ -33,4 +36,20 @@ h2 {
 
 #footerRightAppear {
     display: inline-block;
+}
+
+.footerButton{
+    width:50%;
+    background-color: #ff8f57;
+    margin-top:10px;
+    border-radius:15px;
+    font-size: 0.8em;
+   
+    
+}
+
+.footerButton:hover{
+   
+    background-color:#99231b;
+  
 }
