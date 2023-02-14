@@ -1,0 +1,28 @@
+@import "../../constants.scss";
+
+.footerSection {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+}
+
+.footerLeft {
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+.footerRight {
+    grid-column-start: 2;
+    grid-column-end: 3;
+
+}
+
+.footerWeather {
+    background-color: blue;
+    width: 50%;
+    height: 50%;
+}
+
+h2 {
+    margin-bottom: 2%;
+}
