@@ -2,14 +2,15 @@ import React from "react";
 import "./App.scss";
 import { Header } from "./navigation/Header";
 import { Route, Routes } from "react-router-dom";
-import { Home } from "./Home/Home";
+import { Home } from "./home/Home";
+import { Journey } from "./Journey/Journey";
 
 const App: React.FunctionComponent = () => {
   return (
     <>
       <Header />
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/" element={<Journey />} />
       </Routes>
     </>
   );
