@@ -16,15 +16,15 @@ export default function Footer() {
         </div>
 
         <div className='footerRight'>
-            <div className='footerRightContent'id={footerRight ? "footerRightAppear" : "footerRightWrapper"}>
+            <div className='footerRightContent' id={footerRight ? "footerRightAppear" : "footerRightWrapper"}>
                 <h2>Weather on Mars</h2>
                 <div className='footerWeather'>Weather Component Placeholder</div>
             </div>
-            <div className='footerRightContent'id={footerRight ? "footerRightWrapper" : "footerRightAppear"}>
+            <div className='footerRightContent' id={footerRight ? "footerRightWrapper" : "footerRightAppear"}>
                 <h2>Fun Fact</h2>
                 <div className='footerFact'>Fun Fact Placeholder</div>
             </div>
-            <button className="footerButton" onClick={() => setFooterRight(!footerRight)}>{ footerRight? "Check Fun Facts" :  "Check Weather"}</button>
+            <button className="footerButton" onClick={() => setFooterRight(!footerRight)}>{footerRight ? "Check Fun Facts" : "Check Weather"}</button>
         </div>
     </div>)
 }
