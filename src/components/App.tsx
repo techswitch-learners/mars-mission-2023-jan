@@ -10,7 +10,12 @@ const App: React.FunctionComponent = () => {
     <>
       <Header />
       <Routes>
-        <Route path="/" element={<LandingPage />} />
+      {/* under review */}
+        <Route path="/" element={<div>Home</div>} />
+        <Route path="/journey" element={<div>Journey</div>} />
+        <Route path="/mars-viewer" element={<div>MarsViewer</div>} />
+        <Route path="/birthday" element={<div>Birthday</div>} />
+        <Route path="/info" element={<div>Info</div>} />
       </Routes>
       <footer><Footer /></footer>
     </>
