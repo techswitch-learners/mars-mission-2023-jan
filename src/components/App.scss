@@ -1,8 +1,5 @@
-// Define constants
-
-//COLOURS
+// COLOURS
 $backgroundColour: #290907;
-// To be used for borders/header/footer
 $blockColour: #99231b;
 $hoverColour: #ff8f57;
 $transparentOverlayColour: #270907;
@@ -13,48 +10,39 @@ $fontColour: #ffffff;
 $fontType: Helvetica;
 $fontTypeBackup: "Source Sans Pro";
 
-// Font Weights:
 $fontLight: 300;
 $fontNormal: 400;
 $fontBold: 600;
 
-// Size
-// Mobile
 $titleSizeMobile: 24px;
 $subtitleSizeMobile: 20px;
 $buttonSizeMobile: 20px;
 $bodySizeMobile: 14px;
 $secondarySizeMobile: 10px;
 
-// Tablet
 $titleSizeTablet: 24px;
 $subtitleSizeTablet: 20px;
 $buttonSizeTablet: 20px;
 $bodySizeTablet: 14px;
 $secondarySizeTablet: 10px;
 
-// Desktop
 $titleSizeDesktop: 32px;
 $subtitleSizeDesktop: 24px;
 $buttonSizeDesktop: 24px;
 $bodySizeDesktop: 16px;
 $secondarySizeDesktope: 12px;
 
-
 // SPACING
-// Mobile
 $guttersMobile: 24px;
 $cardSeparationMobile: 24px;
 $sectionSpacingMobile: 40px;
 $cardPaddingMobile: 24px;
 
-// Tablet
 $guttersTablet: 32px;
 $cardSeparationTablet: 32px;
 $sectionSpacingTablet: 48px;
 $cardPaddingTablet: 24px;
 
-// Desktop
 $guttersDesktop: 48px;
 $cardSeparationDesktop: 48px;
 $sectionSpacingDesktop: 80px;
