@@ -16,11 +16,11 @@ export default function Footer() {
         </div>
 
         <div className='footerRight'>
-            <div id={footerRight ? "footerRightAppear" : "footerRightWrapper"}>
-                <h2>Latest Weather on Mars</h2>
+            <div className='footerRightContent'id={footerRight ? "footerRightAppear" : "footerRightWrapper"}>
+                <h2>Weather on Mars</h2>
                 <div className='footerWeather'>Weather Component Placeholder</div>
             </div>
-            <div id={footerRight ? "footerRightWrapper" : "footerRightAppear"}>
+            <div className='footerRightContent'id={footerRight ? "footerRightWrapper" : "footerRightAppear"}>
                 <h2>Fun Fact</h2>
                 <div className='footerFact'>Fun Fact Placeholder</div>
             </div>
