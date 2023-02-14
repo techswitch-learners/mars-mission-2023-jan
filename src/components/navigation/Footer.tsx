@@ -1,8 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Footer.scss";
 import { Route, Routes, Link } from "react-router-dom";
 
 export default function Footer() {
+
+    const [footerRight, setFooterRight] = useState(true);
+
+
     return (<div className='footerSection'>
         <div className='footerLeft'>
             <h2>Useful Links</h2>
@@ -12,8 +16,15 @@ export default function Footer() {
         </div>
 
         <div className='footerRight'>
-            <h2>Latest Weather on Mars</h2>
-            <div className='footerWeather'>Weather Component Placeholder</div>
+            <div id={footerRight ? "footerRightAppear" : "footerRightWrapper"}>
+                <h2>Latest Weather on Mars</h2>
+                <div className='footerWeather'>Weather Component Placeholder</div>
+            </div>
+            <div id={footerRight ? "footerRightWrapper" : "footerRightAppear"}>
+                <h2>Fun Fact</h2>
+                <div className='footerFact'>Fun Fact Placeholder</div>
+            </div>
+            <button className="button" onClick={() => setFooterRight(!footerRight)}>{ footerRight? "Find fun facts" : "Find Weather"}</button>
         </div>
     </div>)
 }
