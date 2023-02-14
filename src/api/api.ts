@@ -30,6 +30,6 @@ export async function imageAPI (date:string,rover:string,camera:string) {
     return imageInfo;
 }
 
-console.log(imageAPI("2015-05-30","curiosity","fhaz"))
+// console.log(imageAPI("2015-05-30","curiosity","fhaz"))
 
 
