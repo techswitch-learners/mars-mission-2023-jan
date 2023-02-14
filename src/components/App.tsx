@@ -10,11 +10,11 @@ const App: React.FunctionComponent = () => {
       <Header />
       <Routes>
       {/* under review */}
-        <Route path="/" element={<Home />} />
-        <Route path="/journey" element={<Journey />} />
-        <Route path="/mars-viewer" element={<MarsViewer />} />
-        <Route path="/birthday" element={<Birthday />} />
-        <Route path="/info" element={<Info />} />
+        <Route path="/" element={<div>Home</div>} />
+        <Route path="/journey" element={<div>Journey</div>} />
+        <Route path="/mars-viewer" element={<div>MarsViewer</div>} />
+        <Route path="/birthday" element={<div>Birthday</div>} />
+        <Route path="/info" element={<div>Info</div>} />
       </Routes>
     </>
   );
