@@ -28,12 +28,3 @@ export default function Footer() {
         </div>
     </div>)
 }
-
-// Add Mars Mission logo & TechSwitch logo with links - should stick to the bottom of the page
-
-// Footer should have two sections:
-
-// - Left section must contains links : Terms of Use, Legal, relevant links (e.g. to NASA site). Left section may contain a sign-up newsletter form (which will not operational
-// - Right section must contain either a weather report section or a fun fact section. Real-time weather ticket is preferred, if this is impossible move to fun fact ticket see separate tickets which should be linked below
-//   - Real-time Mars weather report ticket - [https://trello.com/c/HmgQbTFj](https://trello.com/c/HmgQbTFj "smartCard-inline")
-//   - Fun fact ticket-  [https://trello.com/c/5YiRCzox](https://trello.com/c/5YiRCzox "smartCard-inline")
