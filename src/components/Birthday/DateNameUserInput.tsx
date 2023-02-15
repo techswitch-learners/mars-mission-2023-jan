@@ -6,6 +6,7 @@ export function DateNameUserInput(props: {
 	handleSubmit: (event:FormEvent<HTMLFormElement>) => void,
 }){
     return (
+        <section className="user-input">
         <form className="date-name-form" onSubmit={(event) => props.handleSubmit(event)}>
             <label htmlFor="user-name">
 				Name: 
@@ -37,5 +38,6 @@ export function DateNameUserInput(props: {
 
             <button className="btn date-name" type="submit">OK!</button>
         </form>
+        </section>
     )
 }

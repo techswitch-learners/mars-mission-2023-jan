@@ -1,6 +1,6 @@
 @import "../App.scss";
 
-*{
+main{
     background-color: $backgroundColour;
 	color: $fontColour;
 	font-family: $fontType,$fontTypeBackup; 
@@ -22,6 +22,8 @@ form.date-name-form {
     border-radius:$buttonRadius;
     padding:0 15px;
     cursor:pointer;
+    width:80px;
+    height: 35px;
 }
 
 .btn.info-btn{
@@ -58,3 +60,22 @@ input:focus{
 label{
     font-size:24px;
 }
+
+// mobible view:
+@media only screen and (max-width: 375px) {
+    main{
+        padding: 20px;
+    }
+    
+    form.date-name-form{
+        width:60%;
+        flex-direction: column;
+		
+    }
+
+    input{
+        margin-left: 0;
+    }
+}
+    
+
