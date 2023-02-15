@@ -1,45 +1,31 @@
 @import "../../constants.scss";
 
-/*
-.menuoptionpc {
-
-    position: fixed;
-    font-size: 24px;
-    background-color: #151820;
-    color: #ffffff;
-
-    left: 0;
-    right: 0;
-    top: 0;
-
-    width: 100%;
-    height: 6%;
-
-    display: grid;
-    grid-template-columns: 15% 25% 10% 10% 15% 15%;
-}
-    #menuMyFace {
-        grid-column-start: 2;
-        grid-column-end: 3;
+//DESKTOP
+@media (min-width: 376px) {
+    .burger-button {
+      display: none;
+      z-index: 6;
     }
-*/
-
-nav {
+    .hamburger-closed {
     display: grid;
     grid-template-columns: 25% 15% 15% 15% 15% 15%;
-    ul {
-        text-decoration: none;
-        text-align: center;
-        &:hover {
-            color: white;
-        }
-        li {
-            a {
-                &:hover {
-                    color: white;
-                }
-            }
-            list-style: none;
-        }
+    width: 100%;
+    height: 50px;
+    list-style-type: none;
     }
+
+}
+
+//MOBILE
+@media (max-width: 375px) {
+    .hamburger-closed {
+        display:none;
+    }
+    .hamburger-open{
+    display: grid;
+    grid-template-rows: 20% 20% 20% 20% 20% 20%;
+    width: 100%;
+    list-style-type: none;
+    }
+
 }
