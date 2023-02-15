@@ -21,16 +21,14 @@ export interface roverModel {
     status:string;
 }
 
-export async function imageAPI (date:string,rover:string,camera:string):Promise<imageApiModel[]> {
+export async function getImagesFromAPI (date:string, rover:string, camera:string):Promise<imageApiModel[]> {
 
-    let url = `https://api.nasa.gov/mars-photos/api/v1/rovers/${rover}/photos?camera=${camera}&earth_date=${date}&api_key=jPTvIJZBife9yXLo9XXW1vDRXpKunAZUdbEGn5LM`;
+    const url = `https://api.nasa.gov/mars-photos/api/v1/rovers/${rover}/photos?camera=${camera}&earth_date=${date}&api_key=jPTvIJZBife9yXLo9XXW1vDRXpKunAZUdbEGn5LM`;
     
-    let imageData = await fetch(url)
+    const imageData = await fetch(url)
     .then (response => response.json());
 
     return imageData.photos;
 }
-
-// console.log(imageAPI("2015-05-30","curiosity","fhaz"))
 
 
