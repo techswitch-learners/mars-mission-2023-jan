@@ -21,7 +21,7 @@ export interface roverModel {
     status:string;
 }
 
-export async function getImagesFromAPI (date:string, rover:string, camera:string):Promise<imageApiModel[]> {
+export async function getImagesFromApi (date:string, rover:string, camera:string):Promise<imageApiModel[]> {
 
     const url = `https://api.nasa.gov/mars-photos/api/v1/rovers/${rover}/photos?camera=${camera}&earth_date=${date}&api_key=jPTvIJZBife9yXLo9XXW1vDRXpKunAZUdbEGn5LM`;
     
