@@ -1,5 +1,4 @@
 import React from "react";
-import { BsCalendar3 } from 'react-icons/bs'
 
 export function Birthday(){
     return(
