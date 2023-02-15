@@ -10,7 +10,7 @@ const App: React.FunctionComponent = () => {
     <>
       <Header />
       <Routes>
-        <Route path="/" element={<Journey />} />
+        <Route path="/journey" element={<Journey />} />
       </Routes>
     </>
   );

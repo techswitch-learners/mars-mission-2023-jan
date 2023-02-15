@@ -3,7 +3,7 @@ $border: 2px solid orange;
 
 .journey-container {
     height: 70vh;
-    width: 99vw;
+    width: 98vw;
     position: relative;
     border: 2px solid red;
     align-items: center;
@@ -37,6 +37,7 @@ $border: 2px solid orange;
     border: $border;
 }
 
+//also optimised for mobile size of 375px
 @media (max-width: 426px) {
     .journey-image-container {
         height: 65%;
