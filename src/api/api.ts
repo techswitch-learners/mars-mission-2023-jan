@@ -1,33 +1,34 @@
 export interface imageApiModel {
-    imageURL:string;
-    camera:string;
-    rover:string;
-    landingDate:string;
-    launchDate:string;
+    id:number;
+    sol:number;
+    camera:cameraModel;
     earthDate:string;
+    rover:roverModel;
 }
 
-export async function imageAPI (date:string,rover:string,camera:string) {
+export interface cameraModel {
+    id: number;
+    name:string;
+    rover_id: number;
+    full_name:string;
+}
 
-    let url = `https://api.nasa.gov/mars-photos/api/v1/rovers/${rover}/photos?${camera}&${date}api_key=jPTvIJZBife9yXLo9XXW1vDRXpKunAZUdbEGn5LM`;
+export interface roverModel {
+    id:number;
+    name:string;
+    landing_date:string;
+    launch_date:string;
+    status:string;
+}
+
+export async function imageAPI (date:string,rover:string,camera:string):Promise<imageApiModel[]> {
+
+    let url = `https://api.nasa.gov/mars-photos/api/v1/rovers/${rover}/photos?camera=${camera}&earth_date=${date}&api_key=jPTvIJZBife9yXLo9XXW1vDRXpKunAZUdbEGn5LM`;
     
-    let imageData = await fetch(url);
-    let validImageData = await imageData.json();
+    let imageData = await fetch(url)
+    .then (response => response.json());
 
-    let imageInfo:Array<imageApiModel> = [];
-
-    validImageData.photos.map((photo:any) => {
-        imageInfo.push({
-          imageURL: photo.img_src,
-          camera: photo.camera.full_name,
-          rover:photo.rover.name,
-          landingDate:photo.rover.landing_date,
-          launchDate:photo.rover.launch_date,
-          earthDate: photo.camera.earth_date,
-        });
-    });
-   
-    return imageInfo;
+    return imageData.photos;
 }
 
 // console.log(imageAPI("2015-05-30","curiosity","fhaz"))

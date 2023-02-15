@@ -3,9 +3,13 @@ import "./App.scss";
 import { Header } from "./navigation/Header";
 import { Route, Routes } from "react-router-dom";
 import { Home } from "./Home/Home";
+import { useEffect } from "react";
+import { imageAPI } from "../api/api";
+
 
 const App: React.FunctionComponent = () => {
-  
+
+
   return (
     <>
       <Header />
