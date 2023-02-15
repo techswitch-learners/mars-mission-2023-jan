@@ -4,10 +4,17 @@ main{
     background-color: $backgroundColour;
 	color: $fontColour;
 	font-family: $fontType,$fontTypeBackup; 
+    padding-top:20px;
 }
 
-.birthday-title{
-    font-size:$titleSizeDesktop;
+h1.birthday-title{
+	font-size: $titleSizeDesktop;
+    text-align: center;
+}
+
+h2.birthday-subtitle {
+	font-size: $subtitleSizeDesktop;
+    text-align: center;
 }
 
 form.date-name-form {
@@ -75,6 +82,14 @@ label{
 
     input{
         margin-left: 0;
+    }
+    
+    h1.birthday-title{
+        font-size: $titleSizeMobile;
+    }
+
+    h2.birthday-subtitle{
+        font-size: $bodySizeMobile;
     }
 }
     

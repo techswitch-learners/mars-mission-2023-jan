@@ -12,7 +12,8 @@ export function Birthday(){
 
     return(
         <main>
-            <h1 className="birthday-title">Capture the Magic of Your Birthday on Mars: Enter Your Name and Birthday to Receive Your Personalized Martian Photos!</h1>
+            <h1 className="birthday-title">Capture the Magic of Your Birthday on Mars:</h1>
+            <h2 className="birthday-subtitle">Enter Your Name and Birthday to Receive Your Personalized Martian Photos!</h2>
             <DateNameUserInput setName={setName} setBirthday={setBirthday} handleSubmit={handleSubmit}/>
             <div>IMPORT DROPDOWN YEAR SELECTION COMPONENT</div>
             <div>IMPORT PHOTOVIEWER COMPONENT</div>
