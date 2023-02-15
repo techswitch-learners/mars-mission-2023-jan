@@ -28,7 +28,11 @@ export function DateNameUserInput(props: {
                     onChange= {e=>props.setBirthday(e.target.value)}
                     required>
                 </input>
-                <button className="btn info-btn" title="We only have photos after the year of 2012. If your birthday year is earlier that, you could review the photos on the same day of any years after 2012. But you will still get your Mars age!">❔</button>
+                <button 
+					className="btn info-btn" 
+					title="We only have photos after the year of 2012. If your birthday year is earlier that, 
+					you could review the photos on the same day of any years after 2012. But you will still get your Mars age!">❔
+				</button>
 			</label>
 
             <button className="btn date-name" type="submit">OK!</button>
