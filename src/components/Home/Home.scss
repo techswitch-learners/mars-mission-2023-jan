@@ -1,36 +1,37 @@
-
-.main-header { 
+.main-header {
     text-align: center;
 }
 
 .main-welcome-message {
     text-align: center;
-
 }
 
 .main-image {
     border: 2px solid orange;
     height: 400px;
-
-    //should be a way to remove repetition of so many media queries
-    @media (max-width: 320px) {
-        height: 200px;
-    }    
-
-    
-    @media (max-width: 768px) {
-        height: 250px;
-    }    
 }
-
 
 .main-image-description {
     border: 2px solid orange;
     height: 150px;
-    @media (max-width: 320px) {
+}
+
+@media(max-width: 320px) {
+    .main-image-description {
         height: 75px;
-    }  
-    @media (max-width: 768px) {
+    }
+
+    .main-image {
+        height: 200px;
+    }
+}
+
+@media (max-width: 768px) {
+    .main-image {
+        height: 250px;
+    }
+
+    .main-image-description {
         height: 100px;
-    }    
+    }
 }
