@@ -9,3 +9,22 @@
 .birthday-title{
     font-size:$titleSizeDesktop;
 }
+
+form.date-name-form {
+	display: flex;
+	gap: $cardSeparationDesktop;
+}
+
+.btn.date-name {
+	border: solid 2px $fontColour;
+    border-radius:$buttonRadius;
+}
+
+input{
+    margin-left:10px;
+    background-color: white;
+    border-radius: $buttonRadius;
+    height:35px;
+    width: 120px;
+	color: black;
+}

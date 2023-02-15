@@ -8,16 +8,18 @@ export function DateNameUserInput(){
     return (
         <form className="date-name-form" onSubmit={(event) => handleSubmit(event)}>
             <label htmlFor="user-name">
-				Name:
+				Name: 
+            
+                <input type="text" name="user-name" id="user-name" placeholder="e.g. John Smith" required></input>
 			</label>
-            <input type="text" name="user-name" id="user-name" required></input>
-
+            
 			<label htmlFor="user-birthday">
 				Birthday:
+                <input type="date" name="user-birthday" id="user-birthday" required></input>
 			</label>
-            <input type="date" name="user-birthday" id="user-birthday" required></input>
+           
 
-            <button type="submit">OK!</button>
+            <button className="btn date-name" type="submit">OK!</button>
         </form>
     )
 }
