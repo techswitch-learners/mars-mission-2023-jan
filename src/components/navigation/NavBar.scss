@@ -1,7 +1,7 @@
 @import "../../constants.scss";
 
 //DESKTOP
-@media (min-width: 376px) {
+@media (min-width: 401px) {
     .burger-button {
       display: none;
       z-index: 6;
@@ -12,20 +12,37 @@
     width: 100%;
     height: 50px;
     list-style-type: none;
+    background-color: $backgroundColour;
+    color: $fontColour;
+
     }
 
 }
 
 //MOBILE
-@media (max-width: 375px) {
+@media (max-width: 400px) {
     .hamburger-closed {
         display:none;
+        background-color: transparent;
     }
     .hamburger-open{
     display: grid;
-    grid-template-rows: 20% 20% 20% 20% 20% 20%;
-    width: 100%;
+    grid-auto-rows: auto; 
     list-style-type: none;
+    background-color: $backgroundColour;
+    width: 40%;
+    height: 80%;
+    color: $fontColour;
+    float: right;
+    margin-top: 30px;
+    margin-right: -90px;
     }
+}
 
+.burger-button {
+    float: right;
+}
+
+.navigation-button {
+    color: white;
 }

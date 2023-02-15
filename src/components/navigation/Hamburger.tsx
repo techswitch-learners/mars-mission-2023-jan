@@ -1,7 +1,7 @@
 
 export default function Hamburger({ isOpen }){
     return(
-        <> Hello
+        <> 
             <div className="hamburger"> 
                 <div className="burger burger1" />
                 <div className="burger burger2" />
@@ -16,6 +16,8 @@ export default function Hamburger({ isOpen }){
                     justify-content: space-around;
                     flex-flow: column nowrap;
                     z-index: 10;
+                    position: static;
+
                 }
                 .burger{
                     width: 2rem;

@@ -10,10 +10,12 @@ import {
 } from "react-icons/io";
 import "./NavBar.scss";
 import Hamburger from "./Hamburger";
-import react, { useState } from "react";
+import react, { useState, useEffect, useRef } from "react";
 
 export const Navbar: React.FunctionComponent = () => {
   const [hamburgerOpen, setHamburgerOpen] = useState(false);
+
+  
 
   const toggleHamburger = () => {
     setHamburgerOpen(!hamburgerOpen);
@@ -25,39 +27,36 @@ export const Navbar: React.FunctionComponent = () => {
               <Hamburger isOpen={hamburgerOpen} />
             </div>
       <ul className={hamburgerOpen? "hamburger-open" : "hamburger-closed"}>
-
+        <li></li>
           <li>
-            
-          </li>
-          <li>
-            <Link to="/">
+            <Link className="navigation-button" to="/">
               <IoMdPlanet />
               <br></br>Home
             </Link>
           </li>
           <li>
-            <Link to="/">
+            <Link className="navigation-button" to="/journey">
               <GiSpaceShuttle />
               <br />
-              Launch
+              Journey
             </Link>
           </li>
           <li>
-            <Link to="/">
+            <Link className="navigation-button" to="/mars-viewer">
               <IoIosCamera />
               <br />
-              Photos
+              Mars Viewer
             </Link>
           </li>
           <li>
-            <Link to="/">
+            <Link className="navigation-button" to="/birthday">
               <IoMdCalendar />
               <br />
               Birthday
             </Link>
           </li>
           <li>
-            <Link to="/">
+            <Link className="navigation-button" to="/info">
               <IoIosInformationCircleOutline />
               <br />
               Info

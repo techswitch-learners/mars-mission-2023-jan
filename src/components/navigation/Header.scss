@@ -1,17 +1,1 @@
-@import "../../constants.scss";
 
-header {
-  nav {
-    background-color: $background-light-accent;
-
-    ul {
-      li {
-        a {
-          &:hover {
-            background-color: $background-dark-accent;
-          }
-        }
-      }
-    }
-  }
-}
