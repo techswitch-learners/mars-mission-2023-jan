@@ -13,11 +13,30 @@
 form.date-name-form {
 	display: flex;
 	gap: $cardSeparationDesktop;
+	justify-content: center;
+	margin-bottom:20px;
 }
 
 .btn.date-name {
 	border: solid 2px $fontColour;
     border-radius:$buttonRadius;
+    padding:0 15px;
+    cursor:pointer;
+}
+
+.btn.info-btn{
+	padding-left: 5px;
+	background-color: rgb(32, 32, 224) ;
+	border-radius: 50%;
+	margin-left: 10px;
+	border:none;
+	&:hover{
+		background-color: $hoverColour;
+	}
+}
+
+.btn.date-name:hover{
+    background-color: $hoverColour;
 }
 
 input{
@@ -28,6 +47,12 @@ input{
     width: 120px;
 	color: black;
 	border: none;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+input:focus{
+    border: solid 2px rgb(16, 36, 135);
 }
 
 label{

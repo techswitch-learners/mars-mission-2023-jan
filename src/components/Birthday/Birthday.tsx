@@ -1,8 +1,5 @@
 import React from "react";
-import { BsCalendar3 } from 'react-icons/bs'
 import { DateNameUserInput } from "./DateNameUserInput";
-
-
 
 export function Birthday(){
     return(

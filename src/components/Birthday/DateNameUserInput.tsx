@@ -16,6 +16,7 @@ export function DateNameUserInput(){
 			<label htmlFor="user-birthday">
 				Birthday:
                 <input type="date" name="user-birthday" id="user-birthday" required></input>
+                <button className="btn info-btn" title="We only have photos after the year of 2012. If your birthday year is earlier that, you could review the photos on the same day of any years after 2012. But you will still get your Mars age!">❔</button>
 			</label>
            
 
