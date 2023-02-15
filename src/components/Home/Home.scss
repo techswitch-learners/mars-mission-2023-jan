@@ -1,0 +1,37 @@
+.main-header {
+    text-align: center;
+}
+
+.main-welcome-message {
+    text-align: center;
+}
+
+.main-image {
+    border: 2px solid orange;
+    height: 400px;
+}
+
+.main-image-description {
+    border: 2px solid orange;
+    height: 150px;
+}
+
+@media(max-width: 320px) {
+    .main-image-description {
+        height: 75px;
+    }
+
+    .main-image {
+        height: 200px;
+    }
+}
+
+@media (max-width: 768px) {
+    .main-image {
+        height: 250px;
+    }
+
+    .main-image-description {
+        height: 100px;
+    }
+}
