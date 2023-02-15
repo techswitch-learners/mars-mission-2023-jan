@@ -7,6 +7,7 @@ import Footer from "./navigation/Footer";
 import { Home } from "./Home/Home";
 
 const App: React.FunctionComponent = () => {
+
   return (
     <>
       <Header />
