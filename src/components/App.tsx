@@ -2,7 +2,7 @@ import React from "react";
 import "./App.scss";
 import { Header } from "./navigation/Header";
 import { Route, Routes } from "react-router-dom";
-import { LandingPage } from "./landingPage/LandingPage";
+import { Home } from "./Home/Home";
 
 const App: React.FunctionComponent = () => {
   
@@ -10,12 +10,11 @@ const App: React.FunctionComponent = () => {
     <>
       <Header />
       <Routes>
-      {/* under review */}
         <Route path="/" element={<Home />} />
-        <Route path="/journey" element={<Journey />} />
-        <Route path="/mars-viewer" element={<MarsViewer />} />
-        <Route path="/birthday" element={<Birthday />} />
-        <Route path="/info" element={<Info />} />
+        <Route path="/journey" element={<div>Journey</div>} />
+        <Route path="/mars-viewer" element={<div>MarsViewer</div>} />
+        <Route path="/birthday" element={<div>Birthday</div>} />
+        <Route path="/info" element={<div>Info</div>} />
       </Routes>
     </>
   );
