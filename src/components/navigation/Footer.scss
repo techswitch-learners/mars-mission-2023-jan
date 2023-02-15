@@ -1,0 +1,166 @@
+@import "../../constants.scss";
+@import "../App.scss";
+
+.footerSection {
+    color: $fontColour;
+    background-color: $backgroundColour;
+    font-family: $fontType $fontTypeBackup;
+    font-weight: $fontNormal;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 10%;
+}
+
+.footerLeft {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    margin-left: 20%;
+
+    a {
+        color: $fontColour;
+    }
+}
+
+.footerRight {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    display: grid;
+    grid-template-rows: 85% 15%;
+}
+
+.footerRightContent {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    height: 160px;
+    width: 90%;
+}
+
+.footerButton {
+    background-color: grey;
+    color: white;
+    margin-bottom: 5px;
+    border-radius: 15px;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    font-family: $fontType $fontTypeBackup;
+    font-weight: $fontNormal;
+}
+
+.footerButton:hover {
+    background-color: $hoverColour;
+}
+
+.footerWeather {
+    background-color: bisque;
+    height: 70%;
+}
+
+.footerFact {
+    background-color: bisque;
+    height: 70%;
+}
+
+h2 {
+    margin-bottom: 2%;
+}
+
+#footerRightWrapper {
+    display: none;
+}
+
+#footerRightAppear {
+    display: inline-block;
+}
+
+@media screen and (max-width: 430px) {
+    h2 {
+        font-size: $subtitleSizeMobile;
+    }
+
+    .footerSection {
+        font-size: $bodySizeMobile;
+    }
+
+    .footerButton {
+        font-size: $bodySizeMobile;
+    }
+
+    .footerRightContent {
+        width: 95%;
+    }
+
+    .footerButton {
+        margin-top: 1%;
+        width: 95%;
+    }
+}
+
+@media screen and (min-width: 431px) {
+    h2 {
+        font-size: $subtitleSizeTablet;
+    }
+
+    .footerSection {
+        font-size: $bodySizeTablet;
+    }
+
+    .footerButton {
+        font-size: $bodySizeTablet;
+    }
+
+    .footerRightContent {
+        width: 70%;
+        margin-bottom: 1%;
+    }
+
+    .footerButton {
+        width: 70%;
+    }
+}
+
+@media screen and (min-width: 760px) {
+    h2 {
+        font-size: $subtitleSizeTablet;
+    }
+
+    .footerSection {
+        font-size: $bodySizeTablet;
+    }
+
+    .footerButton {
+        font-size: $bodySizeTablet;
+    }
+
+    .footerRightContent {
+        width: 50%;
+        margin-bottom: 1%;
+    }
+
+    .footerButton {
+        width: 50%;
+    }
+}
+
+@media screen and (min-width: 1100px) {
+    h2 {
+        font-size: $subtitleSizeDesktop;
+    }
+
+    .footerSection {
+        font-size: $bodySizeDesktop;
+    }
+
+    .footerButton {
+        font-size: $bodySizeDesktop;
+    }
+
+    .footerRightContent {
+        width: 50%;
+        margin-bottom: 2%;
+    }
+
+    .footerButton {
+        width: 50%;
+        height: 73%;
+    }
+}
