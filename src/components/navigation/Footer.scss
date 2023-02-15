@@ -36,12 +36,10 @@
 }
 
 .footerButton {
-
     background-color: grey;
     color: white;
     margin-bottom: 5px;
     border-radius: 15px;
-
     grid-row-start: 2;
     grid-row-end: 3;
     font-family: $fontType $fontTypeBackup;
