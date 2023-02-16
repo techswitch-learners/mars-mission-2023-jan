@@ -7,11 +7,9 @@ export function AstroImage() {
     const [imageUrl, setImageUrl] = useState<string>()
 
     useEffect(() => {
-        // const getImage = async () => { };
-        getAstroImageUrl().then(data => setImageUrl(data));
+        getAstroImageUrl()
+            .then(data => setImageUrl(data));
     },[]);
  
     return <img  className="astroImg" src={imageUrl} />
-   
-
 }
