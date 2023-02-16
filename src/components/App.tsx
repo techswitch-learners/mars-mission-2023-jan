@@ -8,7 +8,6 @@ import {Home} from './Home/Home'
 import {Journey} from './Journey/Journey'
 
 const App: React.FunctionComponent = () => {
-
   return (
     <>
       <Header />
