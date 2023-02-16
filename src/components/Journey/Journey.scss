@@ -1,0 +1,59 @@
+// Temporary border constants for designing. Remove or set to transparent 0px after use
+$border: 2px solid orange;
+
+.journey-container {
+    height: 70vh;
+    width: 98vw;
+    position: relative;
+    border: 2px solid red;
+    align-items: center;
+}
+
+.journey-image-container {
+    position: absolute;
+    height: 90%;
+    width: 58%;
+    margin: 5px;
+    left: 12%;
+    border: $border;
+    align-items: center;
+}
+
+.journey-info-container {
+    position: absolute;
+    height: 90%;
+    width: 24%;
+    right: 2.5%;
+    margin: 5px;
+    border: $border;
+}
+
+.journey-timeline-container {
+    position: absolute;
+    height: 90%;
+    width: 10%;
+    left: 0%;
+    margin: 5px;
+    border: $border;
+}
+
+//also optimised for mobile size of 375px
+@media (max-width: 426px) {
+    .journey-image-container {
+        height: 65%;
+        width: 75%;
+        margin: 5px;
+        left: 17%;
+    }
+    .journey-info-container {
+        width: 75%;
+        height: 30%;
+        bottom: 1%;
+        left: 17%;
+    }
+    .journey-timeline-container {
+        width: 12.5%;
+        height: 95%;
+        left: 1%;
+    }
+}
