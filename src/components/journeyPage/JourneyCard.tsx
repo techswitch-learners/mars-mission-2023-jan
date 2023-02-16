@@ -4,7 +4,7 @@ export function JourneyCard(){
     return (
         <section className="journey-card">
             <img className="journey-card-image"></img>
-            <article className="journey-card-text"></article>     
+            <p className="journey-card-text"></p>     
         </section>
     )
 }
