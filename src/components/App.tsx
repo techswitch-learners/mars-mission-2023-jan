@@ -3,8 +3,8 @@ import "./App.scss";
 import { Header } from "./navigation/Header";
 import { Route, Routes } from "react-router-dom";
 import Footer from "./navigation/Footer";
-import { Home } from "./home/Home";
-import { Journey } from "./journey/Journey";
+import {Home} from './Home/Home'
+import {Journey} from './Journey/Journey'
 
 const App: React.FunctionComponent = () => {
 
