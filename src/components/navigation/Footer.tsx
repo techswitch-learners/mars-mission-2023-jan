@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./Footer.scss";
 import { Route, Routes, Link } from "react-router-dom";
+import { Facts } from "../Facts/Facts";
 
 export default function Footer() {
     const [displayWeather, setDisplayWeather] = useState(true);
@@ -19,7 +20,7 @@ export default function Footer() {
                 </div>
                 <div className='footerRightContent' id={displayWeather ? "footerRightWrapper" : "footerRightAppear"}>
                     <h2>Fun Fact</h2>
-                    <div className='footerFact'>Fun Fact Placeholder</div>
+                 <div> <Facts /></div> 
                 </div>
                 <button className="footerButton" onClick={() => setDisplayWeather(!displayWeather)}>{displayWeather ? "Check Fun Facts" : "Check Weather"}</button>
             </div>
