@@ -1,0 +1,94 @@
+@import "../App.scss";
+
+main{   
+    background-color: $backgroundColour;
+	color: $fontColour;
+	font-family: $fontType,$fontTypeBackup; 
+    padding-top:20px;
+}
+
+h1.birthday-title{
+	font-size: $titleSizeDesktop;
+    text-align: center;
+}
+
+h2.birthday-subtitle {
+	font-size: $subtitleSizeDesktop;
+    text-align: center;
+}
+
+form.date-name-form {
+	display: flex;
+	gap: $cardSeparationDesktop;
+	justify-content: center;
+	margin-bottom:20px;
+}
+
+.btn.date-name {
+	border: solid 2px $fontColour;
+    border-radius:$buttonRadius;
+    padding:0 15px;
+    cursor:pointer;
+    width:80px;
+    height: 35px;
+}
+
+.btn.info-btn{
+	padding-left: 5px;
+	background-color: rgb(32, 32, 224) ;
+	border-radius: 50%;
+	margin-left: 10px;
+	border:none;
+	&:hover{
+		background-color: $hoverColour;
+	}
+}
+
+.btn.date-name:hover{
+    background-color: $hoverColour;
+}
+
+input{
+    margin-left:10px;
+    background-color: white;
+    border-radius: $buttonRadius;
+    height:35px;
+    width: 120px;
+	color: black;
+	border: none;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+input:focus{
+    border: solid 2px rgb(16, 36, 135);
+}
+
+label{
+    font-size:24px;
+}
+
+@media only screen and (max-width: 375px) {
+    main{
+        padding: 20px;
+    }
+    
+    form.date-name-form{
+        width:60%;
+        flex-direction: column;
+    }
+
+    input{
+        margin-left: 0;
+    }
+    
+    h1.birthday-title{
+        font-size: $titleSizeMobile;
+    }
+
+    h2.birthday-subtitle{
+        font-size: $bodySizeMobile;
+    }
+}
+    
+
