@@ -1,0 +1,15 @@
+@import "../App.scss";
+
+.selectYear {
+    background-color: $buttonColour;
+    color: $fontColour;
+    font-family: $fontType;
+    font-size: $bodySizeDesktop;
+    font-weight: $fontNormal;
+}
+
+@media (max-width: 376px) {
+    .selectYear {
+        font-size: $bodySizeMobile;
+    }
+}
