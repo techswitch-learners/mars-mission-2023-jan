@@ -1,6 +1,5 @@
-import React from "react";
 import "./Home.scss";
-import { useState } from "react";
+import React, { useState } from "react";
 
 interface homeImage {
   imageUrl: string;
