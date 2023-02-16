@@ -2,8 +2,8 @@ import React from "react"
 import { useState, MouseEvent } from "react";
 import "./SideBar.scss"
 
-export const SideBar: React.FunctionComponent = () => {
-  const [journeyStage ,setJourneyStage ] = useState(1);
+export function SideBar (props:{setJourneyStage:React.Dispatch<React.SetStateAction<number>>}) {
+  
   const [style, setStyle] = useState({
     1: "side-bar-button",
     2: "side-bar-button",
@@ -13,7 +13,7 @@ export const SideBar: React.FunctionComponent = () => {
   });
 
  function handleButtonClick(buttonStage:number){
-    setJourneyStage (buttonStage);
+    props.setJourneyStage (buttonStage);
   }
 
   function changeStyle(buttonStage:number){
