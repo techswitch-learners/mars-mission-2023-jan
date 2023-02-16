@@ -1,8 +1,8 @@
 import { useState } from "react";
 import { DateNameUserInput } from "./DateNameUserInput";
+import './Birthday/Birthday.scss'
 
 export function Birthday(){
-
     const [name, setName] = useState("");
 	const [birthday, setBirthday] = useState("")
 

@@ -4,7 +4,6 @@ import { Header } from "./navigation/Header";
 import { Route, Routes } from "react-router-dom";
 import { LandingPage } from "./landingPage/LandingPage";
 import { Birthday } from "./Birthday/Birthday";
-import './Birthday/Birthday.scss'
 import Footer from "./navigation/Footer";
 import { Home } from "./Home/Home";
 

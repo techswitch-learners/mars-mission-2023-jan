@@ -22,7 +22,7 @@ export function DateNameUserInput(props: {
             
 			<label htmlFor="user-birthday">
 				Birthday:
-                <input 
+                <input
                     type="date" 
                     name="user-birthday" 
                     id="user-birthday" 
