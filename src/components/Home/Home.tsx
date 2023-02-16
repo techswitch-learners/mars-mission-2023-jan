@@ -1,5 +1,6 @@
 import "./Home.scss";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+import { FaArrowCircleLeft, FaArrowCircleRight } from 'react-icons/fa'
 
 interface homeImage {
   imageUrl: string;
@@ -7,8 +8,8 @@ interface homeImage {
 }
 
 export const Home: React.FunctionComponent = () => {
-
   const [selectedImage, setSelectedImage] = useState(0);
+
   const homeImages: homeImage[] = [
     { imageUrl: "images/homeImages/1-CuriosityRoverWithCameras.jpg", imageInfo: "Excluding its hazcams and navcams (but including the Mastcam), Curiosity carries 10 instruments to explore the martian environment. The rover's robotic arm also sports a drill and a scoop." },
     { imageUrl: "images/homeImages/2-PreservenceRover.jpg", imageInfo: " Perseverance seeks signs of possible past microbial life in those habitable environments, particularly in special rocks known to preserve signs of life over time." },
@@ -22,16 +23,36 @@ export const Home: React.FunctionComponent = () => {
     { imageUrl: "images/homeImages/10-PlanetMars_1.jpg", imageInfo: "Civilisations throughout history have known Mars for its reddish colour, reminiscent of blood. The name Mars comes from the Ancient Roman God of War." }
   ];
 
+  function scrollNextImage() {
+    selectedImage < 9 ?
+      setSelectedImage(selectedImage + 1) :
+      setSelectedImage(0);
+  }
+
+  useEffect(() => {
+    const intervalId = setInterval(
+      () => {
+        scrollNextImage()
+      }, 3000);
+    return () => clearInterval(intervalId);
+  }, [selectedImage])
+
   return (
     <main>
       <h1 className="main-header">Mars Exploration</h1>
       <p className="main-welcome-message">Start your 150 million km journey! </p>
-      <section className="main-image">
-        <img className="main-image-tag" src={homeImages[selectedImage].imageUrl}></img>
-      </section>
-      {/* <section className="main-image-description"><p>{homeImages[selectedImage].imageInfo}</p></section>
-      <button onClick={() => { if (selectedImage < 9) { setSelectedImage(selectedImage + 1) } }}>Next</button>
-      <button onClick={() => { if (selectedImage > 0) { setSelectedImage(selectedImage - 1) } }}>Previous</button> */}
+      <section className="image-info-section">
+        <article className="main-image">
+          <img className="main-image-tag" src={homeImages[selectedImage].imageUrl}></img>
+        </article>
+        <article className="main-image-description">
+          <p>{homeImages[selectedImage].imageInfo}</p>
+        </article>
+        <article className="left-right-home-buttons">
+          <button className="previous-left-button" onClick={() => { selectedImage > 0 ? setSelectedImage(selectedImage - 1) : setSelectedImage(0) }}><FaArrowCircleLeft className="button-icon" /></button>
+          <button className="next-right-button" onClick={() => { scrollNextImage() }}><FaArrowCircleRight className="button-icon" /></button>
+        </article>
+      </section >
     </main>
   );
 };
