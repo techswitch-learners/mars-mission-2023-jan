@@ -9,7 +9,7 @@ import {
 } from "react-icons/io";
 import "./NavBar.scss";
 import Hamburger from "./Hamburger";
-import image from "../../images/nasaLogo.png"
+import image from "../../../images/nasaLogo.png"
 
 export const Navbar: React.FunctionComponent = () => {
   const [hamburgerOpen, setHamburgerOpen] = useState(false);
