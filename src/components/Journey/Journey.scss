@@ -9,6 +9,8 @@ $border: 2px solid orange;
     position: relative;
     border: 2px solid red;
     align-items: center;
+    display:flex;
+    gap:35px;
 }
 
 .journey-image-container {
@@ -66,11 +68,19 @@ section.journey-card{
 
 //also optimised for mobile size of 375px
 @media (max-width: 426px) {
+    .journey-container{
+        display:flex;
+        gap:10px;
+        width:300px;
+        // we need change to adjust the mobile view;
+    }
+
     .journey-image-container {
         height: 65%;
         width: 75%;
         margin: 5px;
         left: 17%;
+      
     }
     .journey-info-container {
         width: 75%;
