@@ -7,11 +7,11 @@ export function journeyContent(){
     const stage5="For Curiosity, landing on Mars meant slowing from about 13,000 MPH (21,000 KPH) to a full stop in just seven minutes. Curiosity landed on Mars in August, 2012. You can see the first picture it ever took on this page. Its mission has been extended indefinitely and Curiosity is happily roaming Mars to this day." 
     
     const contentArray: Array<any> = [
-        {text: stage1, img: "../../../../images/journeyImages/1-curiosity-diagram.jpg"},
-        {text: stage2, img: "../../../../images/journeyImages/2-curiosity-rocket-launch.jpg"},
-        {text: stage3, img: "../../../../images/journeyImages/3-earth-mars-journey.jpg"},
-        {text: stage4, img: "../../../../images/journeyImages/4-curiosity-landing.jpg"},
-        {text: stage5, img: "../../../../images/journeyImages/5-curiosity-first-image.jpg"}
+        {stage: "Stage 1", text: stage1, img: "../../../../images/journeyImages/1-curiosity-diagram.jpg"},
+        {stage: "Stage 2", text: stage2, img: "../../../../images/journeyImages/2-curiosity-rocket-launch.jpg"},
+        {stage: "Stage 3", text: stage3, img: "../../../../images/journeyImages/3-earth-mars-journey.jpg"},
+        {stage: "Stage 4", text: stage4, img: "../../../../images/journeyImages/4-curiosity-landing.jpg"},
+        {stage: "Stage 5", text: stage5, img: "../../../../images/journeyImages/5-curiosity-first-image.jpg"}
     ]
     return contentArray;
 }
