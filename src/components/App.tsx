@@ -1,6 +1,7 @@
 import React from "react";
 import "./App.scss";
 import { Route, Routes } from "react-router-dom";
+import { Birthday } from "./Birthday/Birthday";
 import { Navbar } from "./navigation/Navbar";
 import Footer from "./navigation/Footer";
 import {Home} from './Home/Home'
@@ -17,7 +18,7 @@ const App: React.FunctionComponent = () => {
         <Route path="/" element={<Home/>} />
         <Route path="/journey" element={<Journey/>} />
         <Route path="/mars-viewer" element={<div>MarsViewer</div>} />
-        <Route path="/birthday" element={<div>Birthday</div>} />
+        <Route path="/birthday" element={<Birthday />} />
         <Route path="/info" element={<div>Info</div>} />
       </Routes>
       <footer><Footer /></footer>
