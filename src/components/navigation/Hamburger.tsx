@@ -1,5 +1,7 @@
+interface HamburgerProps { isOpen: boolean; }
 
-export default function Hamburger({ isOpen }){
+
+export default function Hamburger({ isOpen }: HamburgerProps){
     return(
         <> 
             <div className="hamburger"> 

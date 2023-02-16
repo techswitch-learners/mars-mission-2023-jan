@@ -1,41 +1,39 @@
 @import "../../constants.scss";
 
-//DESKTOP
 @media (min-width: 401px) {
     .burger-button {
-      display: none;
-      z-index: 6;
+        display: none;
+        z-index: 6;
     }
+
     .hamburger-closed {
-    display: grid;
-    grid-template-columns: 25% 15% 15% 15% 15% 15%;
-    width: 100%;
-    height: 50px;
-    list-style-type: none;
-    background-color: $backgroundColour;
-    color: $fontColour;
-
+        display: grid;
+        grid-template-columns: 25% 15% 15% 15% 15% 15%;
+        width: 100%;
+        height: 50px;
+        list-style-type: none;
+        background-color: $backgroundColour;
+        color: $fontColour;
     }
-
 }
 
-//MOBILE
 @media (max-width: 400px) {
     .hamburger-closed {
-        display:none;
+        display: none;
         background-color: transparent;
     }
-    .hamburger-open{
-    display: grid;
-    grid-auto-rows: auto; 
-    list-style-type: none;
-    background-color: $backgroundColour;
-    width: 40%;
-    height: 80%;
-    color: $fontColour;
-    float: right;
-    margin-top: 30px;
-    margin-right: -90px;
+
+    .hamburger-open {
+        display: grid;
+        grid-auto-rows: auto;
+        list-style-type: none;
+        background-color: $backgroundColour;
+        width: 40%;
+        height: 80%;
+        color: $fontColour;
+        float: right;
+        margin-top: 30px;
+        margin-right: -90px;
     }
 }
 

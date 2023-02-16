@@ -1,13 +1,14 @@
 import React from "react";
 import "./App.scss";
-import { Header } from "./navigation/Header";
 import { Route, Routes } from "react-router-dom";
 import { LandingPage } from "./landingPage/LandingPage";
+import { Navbar } from "./navigation/Navbar";
+
 
 const App: React.FunctionComponent = () => {
   return (
     <>
-      <Header />
+      <header><Navbar /></ header>
       <Routes>
       {/* under review */}
         <Route path="/" element={<div>Home</div>} />
