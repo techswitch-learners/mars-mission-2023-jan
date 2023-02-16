@@ -1,6 +1,8 @@
 import "./Home.scss";
 import React, { useState, useEffect } from "react";
-import { FaArrowCircleLeft, FaArrowCircleRight } from 'react-icons/fa'
+import { FaArrowCircleLeft, FaArrowCircleRight } from 'react-icons/fa';
+import { Journey } from "../Journey/Journey";
+import { Link } from "react-router-dom";
 
 interface homeImage {
   imageUrl: string;
@@ -52,6 +54,7 @@ export const Home: React.FunctionComponent = () => {
           <button className="previous-left-button" onClick={() => { selectedImage > 0 ? setSelectedImage(selectedImage - 1) : setSelectedImage(0) }}><FaArrowCircleLeft className="button-icon" /></button>
           <button className="next-right-button" onClick={() => { scrollNextImage() }}><FaArrowCircleRight className="button-icon" /></button>
         </article>
+        <Link to='/journey' className="journey-page-button">Start your Journey!</Link>
       </section >
     </main>
   );
