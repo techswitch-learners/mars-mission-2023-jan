@@ -9,7 +9,7 @@ import {
 } from "react-icons/io";
 import "./NavBar.scss";
 import Hamburger from "./Hamburger";
-import image from ".images/src/marMissionLogo.jpg"
+import image from "../../images/nasaLogo.png"
 
 export const Navbar: React.FunctionComponent = () => {
   const [hamburgerOpen, setHamburgerOpen] = useState(false);
@@ -20,13 +20,12 @@ export const Navbar: React.FunctionComponent = () => {
 
   return (
     <nav>
+      <img className="logo" src={image}/>
       <div className="burger-button" onClick={toggleHamburger}>
         <Hamburger isOpen={hamburgerOpen} />
       </div>
       <ul className={hamburgerOpen ? "hamburger-open" : "hamburger-closed"}>
-        <li>
-          <img src="image"/>
-        </li>
+        <li />
         <li>
           <Link className="navigation-button" to="/">
             <IoMdPlanet />
