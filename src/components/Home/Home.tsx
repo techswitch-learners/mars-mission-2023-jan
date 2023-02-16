@@ -26,9 +26,9 @@ export const Home: React.FunctionComponent = () => {
   return (
     <main>
       <h1 className="main-header">Mars Exploration</h1>
-      <p className="main-welcome-message">Start your 150 million km journey!</p>
+      <p className="main-welcome-message">Start your 150 million km journey! </p>
       <section className="main-image">
-        <img src={homeImages[selectedImage].imageUrl}></img>
+        <img className="main-image-tag" src={homeImages[selectedImage].imageUrl}></img>
       </section>
       {/* <section className="main-image-description"><p>{homeImages[selectedImage].imageInfo}</p></section>
       <button onClick={() => { if (selectedImage < 9) { setSelectedImage(selectedImage + 1) } }}>Next</button>

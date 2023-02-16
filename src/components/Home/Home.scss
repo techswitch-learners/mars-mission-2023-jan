@@ -9,6 +9,16 @@
 .main-image {
     border: 2px solid orange;
     height: 400px;
+
+    .main-image-tag {
+        margin: 0 auto;
+        max-width: 98%;
+        max-height: 98%;
+        align-items: center;
+        object-fit: fill;
+        display: block;
+    }
+
 }
 
 .main-image-description {
