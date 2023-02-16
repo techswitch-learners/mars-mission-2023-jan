@@ -1,4 +1,4 @@
-import "./Journey.scss";
+import "./JourneyCard.scss";
 import { journeyContent } from "./journeyContent";
 
 export function JourneyCard(props:{journeyStage:number}){
