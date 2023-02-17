@@ -3,7 +3,11 @@
 .main-side-bar{
     display: flex;
     flex-direction: column;
+    width:35px;
+    position:relative;
+    margin-left:10px;
 }
+
 
 .side-bar-button{
     border-radius: 50%;
@@ -13,6 +17,10 @@
     border: none;
     margin-bottom: 0;
     padding: 0;
+}
+
+.side-bar-button:hover,.side-bar-button-2:hover{
+    cursor: pointer;
 }
 
 .side-bar-button-2{
