@@ -1,0 +1,73 @@
+@import"../App.scss";
+
+section.journey-card{
+    display: flex;
+    width: 85%;
+    height:90%;
+    margin-bottom: 30px;
+    margin-top: 25px;
+	gap:25px;
+    padding:$cardSeparationDesktop;
+    box-sizing: border-box;
+    background-color: $blockColour;
+}
+
+.journey-card-text{
+	width:60%;
+    color:$blockColour;
+    text-align: center;
+    font-size: larger;
+    border-radius: 10px;
+    padding:80px 30px 50px 30px;
+    vertical-align: middle;
+}
+
+.journey-card-info{
+    color:$blockColour
+}
+
+.journey-card-image{
+	width:40%;
+    margin-top:70px;
+    background-color:white;
+    border-radius: 10px;
+}
+
+@media only screen and (max-width:376px){
+  
+    section.journey-card{
+        display: flex;
+		flex-direction: column;
+        height:450px;
+        margin:5px 12px 5px 15%;
+        padding:15px;
+        margin-left:5px;
+        gap:15px
+	}
+    
+    .journey-card-text{
+        width: auto;
+        height: 400px;
+        text-overflow: ellipsis;
+        padding:0;
+        padding-left: 4px;
+        padding-right: 4px;
+        text-align: center;
+        font-size: small;
+        // justify-content: ;
+    }
+
+    .journey-card-image{
+        width: auto;
+        height:60%;
+        margin-top:0;
+    }
+
+    .journey-card-title{
+        margin-top:10px;
+    }
+
+    .journey-card-info {
+        margin-top:7px;
+    }
+}
