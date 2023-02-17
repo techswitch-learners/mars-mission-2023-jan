@@ -6,6 +6,7 @@ import { Birthday } from "./Birthday/Birthday";
 import Footer from "./navigation/Footer";
 import {Home} from './Home/Home'
 import {Journey} from './Journey/Journey'
+import { MarsViewer } from "./marsPhotoViewer/marsViewer";
 
 const App: React.FunctionComponent = () => {
 
@@ -16,7 +17,7 @@ const App: React.FunctionComponent = () => {
       {/* under construction */}
         <Route path="/" element={<Home/>} />
         <Route path="/journey" element={<Journey/>} />
-        <Route path="/mars-viewer" element={<div>MarsViewer</div>} />
+        <Route path="/mars-viewer" element={<MarsViewer/>} />
         <Route path="/birthday" element={<Birthday />} />
         <Route path="/info" element={<div>Info</div>} />
       </Routes>
