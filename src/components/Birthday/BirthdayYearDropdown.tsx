@@ -1,11 +1,15 @@
 import React from "react";
-import { useState, ChangeEvent } from "react";
+import { ChangeEvent } from "react";
 import "./BirthdayYearDropdown.scss";
 
-export function BirthdayYearDropdown() {
+interface BirthdayYearDropdownProps {
+    selectedYear: string;
+    setSelectedYear: React.Dispatch<React.SetStateAction<string>>;
+} 
+
+export function BirthdayYearDropdown({selectedYear, setSelectedYear}: BirthdayYearDropdownProps) {
     const currentYear = new Date().getFullYear();
     const years = Array.from(new Array(20), (val, index) => currentYear - index);
-    const [selectedYear, setSelectedYear] = useState("");
 
     const handleChange = (event: ChangeEvent<HTMLSelectElement>) => {
         setSelectedYear(event.target.value);
@@ -21,7 +25,6 @@ export function BirthdayYearDropdown() {
                 ))}
             </select>
         </div>
-
     )
 }
 
