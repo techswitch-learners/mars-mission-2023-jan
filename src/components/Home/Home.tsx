@@ -51,10 +51,20 @@ export const Home: React.FunctionComponent = () => {
           <p>{homeImages[selectedImage].imageInfo}</p>
         </article>
         <article className="left-right-home-buttons">
-          <button className="previous-left-button" onClick={() => { selectedImage > 0 ? setSelectedImage(selectedImage - 1) : setSelectedImage(0) }}><FaArrowCircleLeft className="button-icon" /></button>
-          <button className="next-right-button" onClick={() => { scrollNextImage() }}><FaArrowCircleRight className="button-icon" /></button>
+          <button className="previous-left-button"
+            onClick={() => { selectedImage > 0 ? setSelectedImage(selectedImage - 1) : setSelectedImage(0) }}>
+            <FaArrowCircleLeft className="button-icon" />
+          </button>
+          <button className="next-right-button"
+            onClick={() => { scrollNextImage() }}>
+            <FaArrowCircleRight
+              className="button-icon" />
+          </button>
         </article>
-        <Link to='/journey' className="journey-page-button">Start your Journey!</Link>
+        <Link to='/journey'
+          className="journey-page-button">
+          Start your Journey!
+        </Link>
       </section >
     </main>
   );
