@@ -2,6 +2,7 @@ import { useState } from "react";
 import { SideBar } from "./SideBar";
 import { JourneyCard } from "./JourneyCard";
 import './Journey.scss'
+import "./JourneyCard.scss"
 
 export function Journey() {
     const [journeyStage ,setJourneyStage ] = useState(1);

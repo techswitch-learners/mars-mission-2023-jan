@@ -5,11 +5,11 @@ $border: 2px solid orange;
 
 .journey-container {
     height: 70vh;
-    width: 98vw;
+    width: 99.6%;
     position: relative;
     align-items: center;
     display:flex;
-    gap:35px;
+    gap:10px;
     border: solid 2px $blockColour;
     margin-bottom: 10px;
 }
@@ -42,7 +42,7 @@ $border: 2px solid orange;
     border: $border;
 }
 
-style for journey card element
+// style for journey card element
 section.journey-card{
     display: flex;
     width: 85%;
@@ -95,7 +95,7 @@ section.journey-card{
         left: 1%;
     }
 
-    style for journey card element
+    // style for journey card element
     section.journey-card{
         display: flex;
 		flex-direction: column;
