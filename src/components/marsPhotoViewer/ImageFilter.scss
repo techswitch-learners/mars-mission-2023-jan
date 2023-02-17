@@ -1,0 +1,67 @@
+@import "../App.scss";
+
+.filterBlock {
+    background-color: $blockColour;
+    padding: 2%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.selectedDropdown {
+    background-color: $buttonColour;
+    color: $fontColour;
+    font-family: $fontType;
+    font-size: $bodySizeDesktop;
+    font-weight: $fontNormal;
+    border: none;
+    margin-left: 5px;
+}
+
+button {
+    background-color: $buttonColour;
+    color: $fontColour;
+    font-family: $fontType;
+    font-size: $bodySizeDesktop;
+    font-weight: $fontNormal;
+    border: none;
+    margin-left: 5px;
+}
+
+#date {
+    background-color: $buttonColour;
+    color: $fontColour;
+    font-family: $fontType;
+    font-size: $bodySizeDesktop;
+    font-weight: $fontNormal;
+    border: none;
+    border-radius: 0%;
+    margin-left: 5px;
+    height: 30px;
+    width: 98%;
+
+} 
+
+@media (max-width: 376px) {
+    .selectedDropdown {
+        font-size: $bodySizeMobile;
+    }
+
+    button {
+        font-size: $bodySizeMobile;
+    }
+
+    #date{
+        font-size: $bodySizeMobile;
+        height: 52px;
+        width: 95%;
+    }
+    
+    .filterLabel{
+        font-size: $bodySizeMobile;
+      display: grid;
+      align-items: end;
+      padding-bottom: 7px;
+      padding-left: 2px;
+    }
+}

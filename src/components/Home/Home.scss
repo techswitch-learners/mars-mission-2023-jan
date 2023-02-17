@@ -1,3 +1,43 @@
+@import "../App.scss";
+
+.button-icon {
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+    border-radius: 50%;
+}
+
+.image-info-section {
+    position: relative;
+}
+
+.left-right-home-buttons {
+    background-color: transparent;
+    color: grey;
+    opacity: 60%;
+    :hover {
+        cursor: pointer;
+    }
+}
+
+.journey-page-button {
+    position: absolute;
+    top: 31%;
+    left: 47%;
+    background-color: $transparentOverlayColour;
+    opacity: 60%;
+    text-decoration: none;
+    align-items: center;
+    width: 100px;
+    height: 40px;
+    border-radius: 10%;
+    text-align: center;
+    color: $fontColour;
+    &:hover {
+        opacity: 100%;
+    }
+}
+
 .main-header {
     text-align: center;
 }
@@ -7,22 +47,70 @@
 }
 
 .main-image {
-    border: 2px solid orange;
-    height: 400px;
+    height: 450px;
+    .main-image-tag {
+        margin: 0 auto;
+        max-width: 98%;
+        max-height: 98%;
+        align-items: center;
+        display: block;
+    }
 }
 
 .main-image-description {
-    border: 2px solid orange;
     height: 150px;
+    width: 320px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.next-right-button {
+    position: absolute;
+    right: 20%;
+    top: 35%;
+}
+
+.previous-left-button {
+    position: absolute;
+    left: 20%;
+    top: 35%;
 }
 
 @media(max-width: 320px) {
     .main-image-description {
-        height: 75px;
+        height: 100px;
+        max-width: 250px;
     }
-
     .main-image {
-        height: 200px;
+        max-height: 200px;
+    }
+}
+
+@media(max-width: 376px) {
+    .next-right-button {
+        position: absolute;
+        right: 2%;
+        top: 19%;
+    }
+    .previous-left-button {
+        position: absolute;
+        left: 2%;
+        top: 19%;
+    }
+    .button-icon {
+        width: 20px;
+        height: 20px;
+        background-color: transparent;
+        border-radius: 50%;
+    }
+    .journey-page-button {
+        position: absolute;
+        align-items: center;
+        top: 22%;
+        left: 40%;
+        width: 80px;
+        height: 40px;
+        border-radius: 10%;
     }
 }
 
@@ -30,8 +118,20 @@
     .main-image {
         height: 250px;
     }
-
     .main-image-description {
         height: 100px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .next-right-button {
+        position: absolute;
+        right: 5%;
+        top: 35%;
+    }
+    .previous-left-button {
+        position: absolute;
+        left: 5%;
+        top: 35%;
     }
 }
