@@ -10,7 +10,6 @@ export function JourneyCard(props:{journeyStage:number}){
             {/* will change src and text in another branch */}
             <img className="journey-card-image" src={content[props.journeyStage-1].img}></img>
 
-            {/* need a h4 tag to put stage title here */}
             <div className="journey-card-text">
                 <h2 className="journey-card-title">{content[props.journeyStage-1].stage}</h2> 
                 <p className="journey-card-info">{content[props.journeyStage-1].text}</p> 

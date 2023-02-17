@@ -29,7 +29,7 @@ section.journey-card{
 
 .journey-card-image{
 	width:40%;
-    margin-top:100px;
+    margin-top:70px;
     background-color:white;
     border-radius: 10px;
 }
@@ -43,6 +43,7 @@ section.journey-card{
         margin:5px 12px 5px 15%;
         padding:15px;
         margin-left:5px;
+        gap:15px
 	}
     
     .journey-card-text{
@@ -50,7 +51,10 @@ section.journey-card{
         height: 400px;
         text-overflow: ellipsis;
         padding:0;
+        padding-left: 4px;
+        padding-right: 4px;
         text-align: center;
+        font-size: small;
         // justify-content: ;
     }
 
@@ -58,5 +62,13 @@ section.journey-card{
         width: auto;
         height:60%;
         margin-top:0;
+    }
+
+    .journey-card-title{
+        margin-top:10px;
+    }
+
+    .journey-card-info {
+        margin-top:7px;
     }
 }
