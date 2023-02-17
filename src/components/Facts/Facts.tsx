@@ -24,6 +24,6 @@ const funFactsAboutMars = [
 ];
 
 export function Facts() {
-  return <main>{funFactsAboutMars[Math.floor(funFactsAboutMars.length * Math.random())]}</main>;
+  return <p>{funFactsAboutMars[Math.floor(funFactsAboutMars.length * Math.random())]}</p>;
 }
 
