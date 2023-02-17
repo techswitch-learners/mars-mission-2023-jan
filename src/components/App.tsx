@@ -1,17 +1,18 @@
 import React from "react";
 import "./App.scss";
-import { Header } from "./navigation/Header";
 import { Route, Routes } from "react-router-dom";
 import { Home } from "./Home/Home";
 import { Journey } from "./Journey/Journey";
 import { MarsViewer } from "./marsPhotoViewer/marsViewer";
 import { Birthday } from "./Birthday/Birthday";
+import { Navbar } from "./navigation/Navbar";
 import Footer from "./navigation/Footer";
+
 
 const App: React.FunctionComponent = () => {
   return (
     <>
-      <Header />
+      <header><Navbar /></ header>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/journey" element={<Journey/>} />
