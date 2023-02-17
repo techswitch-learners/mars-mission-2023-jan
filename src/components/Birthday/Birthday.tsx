@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { DateNameUserInput } from "./DateNameUserInput";
-import { MarsViewer } from "../marsPhotoViewer/marsViewer";
+// import { ImageViewer,ImageSelector } from "../marsPhotoViewer/marsViewer";
 import './Birthday.scss'
 
 export function Birthday() {
@@ -26,7 +26,8 @@ export function Birthday() {
             <h2 className="birthday-subtitle">Enter Your Name and Birthday to Receive Your Personalized Martian Photos!</h2>
             <DateNameUserInput setName={setName} setBirthday={setBirthday} handleSubmit={handleSubmit} />
             {/* <div>IMPORT DROPDOWN YEAR SELECTION COMPONENT</div> */}
-            <MarsViewer />
+            {/* <ImageViewer />
+            <ImageSelector />  */}
             <section className={(earthAge) ? "" : "Mars-Age-hidden"} >
                 <article>
                     <p>You are {marsAge} Mars years old! </p>
