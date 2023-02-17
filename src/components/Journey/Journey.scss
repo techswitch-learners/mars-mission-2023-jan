@@ -65,7 +65,6 @@ section.journey-card{
 .journey-card-text{
 	width:60%;
     background-color:white;
-    font-size: ;
 }
 
 //also optimised for mobile size of 375px
@@ -74,7 +73,6 @@ section.journey-card{
         display:flex;
         gap:10px;
         width:98%;
-        // we need change to adjust the mobile view;
     }
 
     .journey-image-container {
@@ -82,14 +80,15 @@ section.journey-card{
         width: 75%;
         margin: 5px;
         left: 17%;
-      
     }
+
     .journey-info-container {
         width: 75%;
         height: 30%;
         bottom: 1%;
         left: 17%;
     }
+
     .journey-timeline-container {
         width: 12.5%;
         height: 95%;
@@ -103,6 +102,7 @@ section.journey-card{
         height:600px;
         margin:5px 12px 5px 15%;
 	}
+    
     .journey-card-image{
         width: auto;
         height: 40%;
