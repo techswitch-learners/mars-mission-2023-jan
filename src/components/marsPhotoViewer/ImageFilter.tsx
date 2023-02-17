@@ -1,15 +1,17 @@
 import React from "react";
-import { useState, ChangeEvent } from "react";
+import { ChangeEvent } from "react";
 import "./ImageFilter.scss";
 
-export function ImageFilter() {
+interface ImageFilterProps {
+    selectedRover: string;
+    setSelectedRover: React.Dispatch<React.SetStateAction<string>>;
+    selectedCamera: string;
+    setSelectedCamera: React.Dispatch<React.SetStateAction<string>>;
+    selectedDate: string;
+    setSelectedDate: React.Dispatch<React.SetStateAction<string>>;
+}
 
-    // const currentYear = new Date().getFullYear();
-    // const years = Array.from(new Array(20), (val, index) => currentYear - index);
-    const [selectedRover, setSelectedRover] = useState("Curiosity");
-    const [selectedCamera, setSelectedCamera] = useState("");
-    const [selectedDate, setSelectedDate] = useState("");
-    const [imageURL,setImageURL] = useState();
+export function ImageFilter({selectedRover,setSelectedRover,selectedCamera,setSelectedCamera,selectedDate,setSelectedDate}:ImageFilterProps) {
 
     const handleRover = (event: ChangeEvent<HTMLSelectElement>) => {
         setSelectedRover(event.target.value);
@@ -22,12 +24,6 @@ export function ImageFilter() {
     const handleDateChange = (event: ChangeEvent<HTMLInputElement>) => {
         setSelectedDate(event.target.value);
     };
-
-    const handleButtonClick = ()=>{
-        // when clicked call ImageSelector component and make input parameter a random value between index 1 
-        //and length thumbnail array of images returned
-
-    }
 
     return (
         <div className="filterBlock">
@@ -62,12 +58,7 @@ export function ImageFilter() {
                     </>
                 }
             </select>
-           
-            <input type="date" id="date" onChange={handleDateChange} value={selectedDate}/>
-
-            <button type="submit"  onClick={handleButtonClick}>Get Random Image</button>
-            
+            <input type="date" id="date" onChange={handleDateChange} value={selectedDate}/>   
         </div>
-
     )
 }
