@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { DateNameUserInput } from "./DateNameUserInput";
 // import { ImageViewer,ImageSelector } from "../marsPhotoViewer/marsViewer";
+import { BirthdayYearDropdown } from "./BirthdayYearDropdown";
 import './Birthday.scss'
 
 export function Birthday() {

@@ -1,14 +1,16 @@
-import React from "react";
+import { useState } from "react";
+import { SideBar } from "./SideBar";
+import { JourneyCard } from "./JourneyCard";
 import './Journey.scss'
+import "./JourneyCard.scss"
 
 export function Journey() {
+    const [journeyStage ,setJourneyStage ] = useState(1);
+
     return (
         <section className="journey-container">
-            <div className="journey-timeline-container">
-                {/* Journey Timeline/stages Component loaded here */}
-            </div>
-            <div className="journey-image-container"></div>
-            <div className="journey-info-container"></div>
+            <SideBar setJourneyStage={setJourneyStage} />
+            <JourneyCard journeyStage={journeyStage}/>
         </section>
     )
 }
