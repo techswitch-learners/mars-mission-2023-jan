@@ -1,0 +1,58 @@
+@import "../../constants.scss";
+@import "../App.scss";
+
+.imageSelector {
+    display: flexbox;
+    overflow: scroll;
+    width: 80%;
+    height: 30%;
+    margin: auto;
+}
+
+.individualImage {
+    height: auto;
+    width: 20%;
+    margin: 2%;
+}
+
+h5 {
+    color: $hoverColour;
+}
+
+h4,
+h5 {
+    margin-left: 12%;
+    margin-right: 12%;
+    margin-bottom: 2%;
+    margin-top: 0%;
+}
+
+@media screen and (max-width: 430px) {
+    h4 {
+        font-size: $subtitleSizeMobile;
+    }
+
+    p {
+        font-size: $bodySizeMobile;
+    }
+}
+
+@media screen and (min-width: 431px) {
+    h4 {
+        font-size: $subtitleSizeTablet;
+    }
+
+    p {
+        font-size: $bodySizeTablet;
+    }
+}
+
+@media screen and (min-width: 1100px) {
+    h4 {
+        font-size: $subtitleSizeDesktop;
+    }
+
+    p {
+        font-size: $bodySizeDesktop;
+    }
+}
