@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { DateNameUserInput } from "./DateNameUserInput";
 import './Birthday.scss'
+import PdfButton from "./PdfButton";
 
 export function Birthday(){
     const [name, setName] = useState("");
@@ -17,7 +18,7 @@ export function Birthday(){
             <DateNameUserInput setName={setName} setBirthday={setBirthday} handleSubmit={handleSubmit}/>
             <div>IMPORT DROPDOWN YEAR SELECTION COMPONENT</div>
             <div>IMPORT PHOTOVIEWER COMPONENT</div>
-            <div>IMPORT PDF GENERATOR COMPONENT</div>
+            <PdfButton />
         </main>
     )
 }
