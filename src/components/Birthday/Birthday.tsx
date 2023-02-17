@@ -38,9 +38,12 @@ export function Birthday() {
             <h1 className="birthday-title">Capture the Magic of Your Birthday on Mars:</h1>
             <h2 className="birthday-subtitle">Enter Your Name and Birthday to Receive Your Personalized Martian Photos!</h2>
             <DateNameUserInput setName={setName} setBirthday={setBirthday} handleSubmit={handleSubmit} />
-            <section className={(earthAge) ? "" : "Mars-Age-hidden"} >
+            {/* <div>IMPORT DROPDOWN YEAR SELECTION COMPONENT</div> */}
+            {/* <ImageViewer />
+            <ImageSelector />  */}
+            <section className={(earthAge) ? " " : "Mars-Age-hidden"} >
                 <article>
-                    <p>You are {marsAge} Mars years old! </p>
+                    <p className="MarsAge">You are {marsAge} Mars years old! </p>
                 </article>
             </section>
             <div><BirthdayYearDropdown selectedYear={selectedYear} setSelectedYear={setSelectedYear}/></div>

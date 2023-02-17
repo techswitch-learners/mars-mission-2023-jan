@@ -3,6 +3,16 @@ import React, { useState, useEffect } from "react";
 import { FaArrowCircleLeft, FaArrowCircleRight } from 'react-icons/fa';
 import { Journey } from "../Journey/Journey";
 import { Link } from "react-router-dom";
+import image1 from "../../../images/homeImages/1-CuriosityRoverWithCameras.jpg";
+import image2 from "../../../images/homeImages/2-PreservenceRover.jpg";
+import image3 from "../../../images/homeImages/3-SpiritRover.jpg";
+import image4 from "../../../images/homeImages/4-OppurtunityRover.jpg";
+import image5 from "../../../images/homeImages/5-OppurtunityRoverwithCameras.jpg";
+import image6 from "../../../images/homeImages/6-CuriosityRover.jpg";
+import image7 from "../../../images/homeImages/7-Mars Olympus Mons.jpg";
+import image8 from "../../../images/homeImages/8-mars_approach_from_space.jpeg";
+import image9 from "../../../images/homeImages/9-PIA24309_-_rover_at_Jezero_-_from_animation.png";
+import image10 from "../../../images/homeImages/10-PlanetMars_1.jpg";
 
 interface homeImage {
   imageUrl: string;
@@ -13,16 +23,16 @@ export const Home: React.FunctionComponent = () => {
   const [selectedImage, setSelectedImage] = useState(0);
 
   const homeImages: homeImage[] = [
-    { imageUrl: "images/homeImages/1-CuriosityRoverWithCameras.jpg", imageInfo: "Excluding its hazcams and navcams (but including the Mastcam), Curiosity carries 10 instruments to explore the martian environment. The rover's robotic arm also sports a drill and a scoop." },
-    { imageUrl: "images/homeImages/2-PreservenceRover.jpg", imageInfo: " Perseverance seeks signs of possible past microbial life in those habitable environments, particularly in special rocks known to preserve signs of life over time." },
-    { imageUrl: "images/homeImages/3-SpiritRover.jpg", imageInfo: "Spirit uncovered strong evidence that Mars was once much wetter than it is now." },
-    { imageUrl: "images/homeImages/4-OppurtunityRover.jpg", imageInfo: "Opportunity and its twin Spirit were tasked with studying sites on Mars where conditions may once have been favorable for life." },
-    { imageUrl: "images/homeImages/5-OppurtunityRoverwithCameras.jpg", imageInfo: "The Rovers' instruments are state-of-the-art tools for acquiring information about Martian geology, atmosphere, environmental conditions, and potential biosignatures." },
-    { imageUrl: "images/homeImages/6-CuriosityRover.jpg", imageInfo: " Curiosity has demonstrated the ability to land a very large, heavy rover to the surface of Mars and to land more precisely in a 12.4-mile (20-kilometer) landing area" },
-    { imageUrl: "images/homeImages/7-Mars Olympus Mons.jpg", imageInfo: "Olympus Mons, Mars' highest mountain, stands 25 km tall - two and a half times the height of Mount Everest." },
-    { imageUrl: "images/homeImages/8-mars_approach_from_space.jpeg", imageInfo: "NASA engineers prepared intensively for over 45 days to guide Curiosity Rover through Mars' atmosphere and land successfully. " },
-    { imageUrl: "images/homeImages/9-PIA24309_-_rover_at_Jezero_-_from_animation.png", imageInfo: "The Mars Perserverance rover touched down in the 45km wide Jezero Crater. The crater is thought to have once been filled with water - hence its name, which means 'lake' in Czech." },
-    { imageUrl: "images/homeImages/10-PlanetMars_1.jpg", imageInfo: "Civilisations throughout history have known Mars for its reddish colour, reminiscent of blood. The name Mars comes from the Ancient Roman God of War." }
+    { imageUrl: image1, imageInfo: "Excluding its hazcams and navcams (but including the Mastcam), Curiosity carries 10 instruments to explore the martian environment. The rover's robotic arm also sports a drill and a scoop." },
+    { imageUrl: image2, imageInfo: " Perseverance seeks signs of possible past microbial life in those habitable environments, particularly in special rocks known to preserve signs of life over time." },
+    { imageUrl: image3, imageInfo: "Spirit uncovered strong evidence that Mars was once much wetter than it is now." },
+    { imageUrl: image4, imageInfo: "Opportunity and its twin Spirit were tasked with studying sites on Mars where conditions may once have been favorable for life." },
+    { imageUrl: image5, imageInfo: "The Rovers' instruments are state-of-the-art tools for acquiring information about Martian geology, atmosphere, environmental conditions, and potential biosignatures." },
+    { imageUrl: image6, imageInfo: " Curiosity has demonstrated the ability to land a very large, heavy rover to the surface of Mars and to land more precisely in a 12.4-mile (20-kilometer) landing area" },
+    { imageUrl: image7, imageInfo: "Olympus Mons, Mars' highest mountain, stands 25 km tall - two and a half times the height of Mount Everest." },
+    { imageUrl: image8, imageInfo: "NASA engineers prepared intensively for over 45 days to guide Curiosity Rover through Mars' atmosphere and land successfully. " },
+    { imageUrl: image9, imageInfo: "The Mars Perserverance rover touched down in the 45km wide Jezero Crater. The crater is thought to have once been filled with water - hence its name, which means 'lake' in Czech." },
+    { imageUrl: image10, imageInfo: "Civilisations throughout history have known Mars for its reddish colour, reminiscent of blood. The name Mars comes from the Ancient Roman God of War." }
   ];
 
   function scrollNextImage() {
