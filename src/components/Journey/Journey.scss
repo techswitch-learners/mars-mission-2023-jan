@@ -11,7 +11,8 @@ $border: 2px solid orange;
     display:flex;
     gap:10px;
     border: solid 2px $blockColour;
-    margin-bottom: 10px;
+    margin-bottom: 40px;
+    margin-top:0;
 }
 
 .journey-image-container {
@@ -47,9 +48,9 @@ section.journey-card{
     display: flex;
     width: 85%;
     height:90%;
-    margin-left:10%;
     margin-bottom: 30px;
     margin-top: 30px;
+    margin-left:25px;
 	gap:25px;
     padding:$cardSeparationDesktop;
     box-sizing: border-box;
@@ -96,11 +97,17 @@ section.journey-card{
     }
 
     // style for journey card element
+    .journey-container{
+        padding-right:10px;
+        margin-top:20px;
+    }
+
     section.journey-card{
         display: flex;
 		flex-direction: column;
-        height:600px;
-        margin:5px 12px 5px 15%;
+        height:95%;
+        margin:5px 12px 5px 10px;
+        padding:25px;
 	}
     
     .journey-card-image{
