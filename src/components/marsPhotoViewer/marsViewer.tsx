@@ -1,6 +1,9 @@
 import React, { useState } from "react";
 import "./marsViewer.scss";
 import { ImageSelector } from "./ImageSelector";
+import { ImageFilter } from "./ImageFilter";
+import ImageViewer from "./ImageViewer";
+import image from "../../../images/homeImages/3-SpiritRover.jpg";
 
 export const MarsViewer: React.FunctionComponent = () => {
   //image usestate for selecting for imageviewer component
@@ -16,10 +19,11 @@ export const MarsViewer: React.FunctionComponent = () => {
       <h1 className="photo-viewer-header">
         Mars Photo Viewer
       </h1>
-      {/* 
-    Insert the following three components 
-    <ImageViewer />
-    <ImageFilter /> */}
+      <ImageViewer src={(!selectedImage) ? image : selectedImage} />
+      <ImageFilter rover={rover} setRover={setRover}
+        camera={camera} setCamera={setCamera}
+        date={date} setDate={setDate}
+      />
       <ImageSelector setState={setSelectedImage} date={date} rover={rover} camera={camera} />
     </main>
   );

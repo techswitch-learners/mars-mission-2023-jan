@@ -1,11 +1,10 @@
 @import"../App.scss";
 
-//style for journey card element
 section.journey-card{
     display: flex;
     width: 85%;
     height:90%;
-    margin-bottom: 30px;
+    margin-bottom:30px;
     margin-top: 25px;
 	gap:25px;
     padding:$cardSeparationDesktop;
@@ -39,7 +38,7 @@ section.journey-card{
     section.journey-card{
         display: flex;
 		flex-direction: column;
-        height:450px;
+        height:300px;
         margin:5px 12px 5px 15%;
         padding:15px;
         margin-left:5px;
@@ -55,7 +54,6 @@ section.journey-card{
         padding-right: 4px;
         text-align: center;
         font-size: small;
-        // justify-content: ;
     }
 
     .journey-card-image{
