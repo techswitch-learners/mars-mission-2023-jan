@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import { getImagesFromApi, imageApiModel } from "../../api/imagesApi";
 import "./ImageSelector.scss";
 

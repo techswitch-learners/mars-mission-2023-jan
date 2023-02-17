@@ -1,14 +1,18 @@
 import { useState } from "react";
 import { DateNameUserInput } from "./DateNameUserInput";
-// import { ImageViewer,ImageSelector } from "../marsPhotoViewer/marsViewer";
+import ImageViewer from "../marsPhotoViewer/ImageViewer";
+import { ImageSelector } from "../marsPhotoViewer/ImageSelector";
 import { BirthdayYearDropdown } from "./BirthdayYearDropdown";
+import { useRef } from "react";
 import './Birthday.scss'
 import PdfButton from "./PdfButton";
-import { MarsViewer } from "../marsPhotoViewer/marsViewer";
+import {useReactToPrint} from "react-to-print";
 
 export function Birthday() {
     const [name, setName] = useState("");
     const [birthday, setBirthday] = useState("");
+    const [selectedYear,setSelectedYear] = useState("2012")
+    const [url,setUrl] = useState("https://th.bing.com/th/id/OIP.L1bUoUEuOYDbhgQcomH4RgHaFQ?w=222&h=180&c=7&r=0&o=5&pid=1.7");
     const today = new Date();
     const currentYear = today.getFullYear();
     const currentMonth = today.getMonth();
@@ -19,10 +23,16 @@ export function Birthday() {
     //A mars year is 1.88 earth years. toFixed() function returns a string, not an integer
     const marsAge = (earthAge / 1.88).toFixed(2);
 
+    const imageRef:any = useRef();
+
+
     function handleSubmit(event: any) {
         event.preventDefault();
     }
 
+    const handlePrint = useReactToPrint({
+        content: () => imageRef.current,
+    })
     return (
         <main>
             <h1 className="birthday-title">Capture the Magic of Your Birthday on Mars:</h1>
@@ -34,8 +44,9 @@ export function Birthday() {
                 </article>
             </section>
             <div><BirthdayYearDropdown selectedYear={selectedYear} setSelectedYear={setSelectedYear}/></div>
-            <div><MarsViewer /></div>
-            <PdfButton />
+            <div><ImageViewer src={url}/></div>
+            <div><ImageSelector setState={setUrl} date={birthday} rover="curiosity" camera="mast"/></div>
+            <PdfButton handlePrint={handlePrint} />
         </main>
     )
 }
