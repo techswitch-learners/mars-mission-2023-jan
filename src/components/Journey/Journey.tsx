@@ -10,9 +10,6 @@ export function Journey() {
         <section className="journey-container">
             <SideBar setJourneyStage={setJourneyStage} />
             <JourneyCard journeyStage={journeyStage}/>
-            {/* <div className="journey-timeline-container"></div>
-            <div className="journey-image-container"></div>
-            <div className="journey-info-container"></div> */}
         </section>
     )
 }

@@ -11,8 +11,10 @@ export function JourneyCard(props:{journeyStage:number}){
             <img className="journey-card-image" src={content[props.journeyStage-1].img}></img>
 
             {/* need a h4 tag to put stage title here */}
-            {/* <h4 className="journey-card-text">{content[props.journeyStage-1].stage}</h4>  */}
-            <p className="journey-card-text">{content[props.journeyStage-1].text}</p>     
+            <div className="journey-card-text">
+                <h2 className="journey-card-title">{content[props.journeyStage-1].stage}</h2> 
+                <p className="journey-card-info">{content[props.journeyStage-1].text}</p> 
+            </div>    
         </section>
     )
 }
