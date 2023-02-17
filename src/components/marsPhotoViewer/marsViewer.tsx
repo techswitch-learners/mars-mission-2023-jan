@@ -4,19 +4,18 @@ import { useState } from "react";
 import { ImageFilter } from "./ImageFilter";
 
 export const MarsViewer: React.FunctionComponent = () => {
-
-    const [selectedRover, setSelectedRover] = useState("Curiosity");
-    const [selectedCamera, setSelectedCamera] = useState("");
-    const [selectedDate, setSelectedDate] = useState("");
-
+  const [date, setDate] = useState<string>("2020-1-1");
+  const [rover, setRover] = useState<string>("curiosity");
+  const [camera, setCamera] = useState<string>("NAVCAM");
+  
   return (
     <main>
       <h1 className="photo-viewer-header">
         Mars Photo Viewer
       </h1>
-      <ImageFilter selectedRover={selectedRover} setSelectedRover={setSelectedRover} 
-      selectedCamera={selectedCamera} setSelectedCamera={setSelectedCamera}
-      selectedDate={selectedDate} setSelectedDate={setSelectedDate} 
+      <ImageFilter rover={rover} setRover={setRover} 
+      camera={camera} setCamera={setCamera}
+      date={date} setDate={setDate} 
       />
     {/* 
     Insert the following three components 

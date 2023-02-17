@@ -3,26 +3,26 @@ import { ChangeEvent } from "react";
 import "./ImageFilter.scss";
 
 interface ImageFilterProps {
-    selectedRover: string;
-    setSelectedRover: React.Dispatch<React.SetStateAction<string>>;
-    selectedCamera: string;
-    setSelectedCamera: React.Dispatch<React.SetStateAction<string>>;
-    selectedDate: string;
-    setSelectedDate: React.Dispatch<React.SetStateAction<string>>;
+    rover: string;
+    setRover: React.Dispatch<React.SetStateAction<string>>;
+    camera: string;
+    setCamera: React.Dispatch<React.SetStateAction<string>>;
+    date: string;
+    setDate: React.Dispatch<React.SetStateAction<string>>;
 }
 
-export function ImageFilter({selectedRover,setSelectedRover,selectedCamera,setSelectedCamera,selectedDate,setSelectedDate}:ImageFilterProps) {
+export function ImageFilter({rover,setRover,camera,setCamera,date,setDate}:ImageFilterProps) {
 
     const handleRover = (event: ChangeEvent<HTMLSelectElement>) => {
-        setSelectedRover(event.target.value);
+        setRover(event.target.value);
     };
 
     const handleCamera = (event: ChangeEvent<HTMLSelectElement>) => {
-        setSelectedCamera(event.target.value);
+        setCamera(event.target.value);
     };
 
     const handleDateChange = (event: ChangeEvent<HTMLInputElement>) => {
-        setSelectedDate(event.target.value);
+        setDate(event.target.value);
     };
 
     return (
@@ -32,13 +32,13 @@ export function ImageFilter({selectedRover,setSelectedRover,selectedCamera,setSe
             <label className="filterLabel">Select a Date</label>
             <br>
             </br>
-            <select className="selectedDropdown" value={selectedRover} onChange={handleRover}>
+            <select className="selectedDropdown" value={rover} onChange={handleRover}>
                 <option value="Curiosity">Curiosity</option>
                 <option value="Spirit">Spirit</option>
                 <option value="Opportunity">Opportunity</option>
             </select>
-            <select className="selectedDropdown" value={selectedCamera} onChange={handleCamera}>
-                {(selectedRover === "Curiosity") ?
+            <select className="selectedDropdown" value={camera} onChange={handleCamera}>
+                {(rover === "Curiosity") ?
                     <>
                         <option value="FHAZ">Front Hazard Avoidance Camera</option>
                         <option value="RHAZ">Rear Hazard Avoidance Camera</option>
@@ -58,7 +58,7 @@ export function ImageFilter({selectedRover,setSelectedRover,selectedCamera,setSe
                     </>
                 }
             </select>
-            <input type="date" id="date" onChange={handleDateChange} value={selectedDate}/>   
+            <input type="date" id="date" onChange={handleDateChange} value={date}/>   
         </div>
     )
 }
