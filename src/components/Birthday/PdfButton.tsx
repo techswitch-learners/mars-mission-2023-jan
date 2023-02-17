@@ -1,6 +1,7 @@
 import "./PdfButton.scss";
 import { useRef } from "react";
 import {useReactToPrint} from "react-to-print";
+import { MarsViewer } from "../marsPhotoViewer/marsViewer";
 
 export default function PdfButton () {
     const imageRef:any = useRef();
@@ -10,7 +11,7 @@ export default function PdfButton () {
 
 	return(
 		<div>
-            {/* <ComponentToPrint ref={imageRef}></> */}
+            {/* <MarsViewer ref={imageRef}></> */}
 			<button onClick={()=>handlePrint} className="btn-pdf" type="submit">Make it a birthday card!</button>
 		</div>
 	)
