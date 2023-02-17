@@ -19,15 +19,11 @@ export const MarsViewer: React.FunctionComponent = () => {
       <h1 className="photo-viewer-header">
         Mars Photo Viewer
       </h1>
-      <ImageViewer  src={(!selectedImage)? image : selectedImage}/>
-      <ImageFilter rover={rover} setRover={setRover} 
-      camera={camera} setCamera={setCamera}
-      date={date} setDate={setDate} 
+      <ImageViewer src={(!selectedImage) ? image : selectedImage} />
+      <ImageFilter rover={rover} setRover={setRover}
+        camera={camera} setCamera={setCamera}
+        date={date} setDate={setDate}
       />
-    {/* 
-    Insert the following three components 
-    <ImageViewer />
-    <ImageFilter /> */}
       <ImageSelector setState={setSelectedImage} date={date} rover={rover} camera={camera} />
     </main>
   );
