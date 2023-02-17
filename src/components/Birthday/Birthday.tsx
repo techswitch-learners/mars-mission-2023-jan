@@ -29,9 +29,9 @@ export function Birthday() {
             {/* <div>IMPORT DROPDOWN YEAR SELECTION COMPONENT</div> */}
             {/* <ImageViewer />
             <ImageSelector />  */}
-            <section className={(earthAge) ? "" : "Mars-Age-hidden"} >
+            <section className={(earthAge) ? " " : "Mars-Age-hidden"} >
                 <article>
-                    <p>You are {marsAge} Mars years old! </p>
+                    <p className="MarsAge">You are {marsAge} Mars years old! </p>
                 </article>
             </section>
             {/* <div>IMPORT PDF GENERATOR COMPONENT</div> */}
